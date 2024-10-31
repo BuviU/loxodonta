@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Loxodonta</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="/assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <img src="/assets/img/favicon/logo.png" alt="" style="width: 20%;">
+              </span>
+ 
+              
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Home</div>
+              </a>
+            </li>
+
+            <!-- Layouts -->
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-face"></i>
+                <div data-i18n="Layouts">Mental well-being</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#Mood" class="menu-link">
+                    <div data-i18n="Without menu">Mood</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#Thoughts" class="menu-link">
+                    <div data-i18n="Without navbar">Thoughts</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#Emotionalstatus" class="menu-link">
+                    <div data-i18n="Container">Emotions</div>
+                  </a>
+                </li>
+    
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-heart"></i>
+                <div data-i18n="Account Settings">Tracks physical health metrics</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#PhysicalActivity" class="menu-link">
+                    <div data-i18n="Account">Physical Activity</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#Steps" class="menu-link">
+                    <div data-i18n="Notifications">Steps</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#Sport" class="menu-link">
+                    <div data-i18n="Connections">Sport</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-drink"></i>
+                <div data-i18n="Authentications">Food and Diet Logs</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="#food" class="menu-link" >
+                    <div data-i18n="Basic">Food</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#food" class="menu-link" >
+                    <div data-i18n="Basic">Diet</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="#about" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">About</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-phone-call"></i>
+                <div data-i18n="Basic">Contact Us</div>
+              </a>
+            </li>
+           <iframe src="https://lottie.host/embed/5e07a28b-0965-4119-bcd4-e46cab8b4d26/HS3ZKWQNxJ.json"></iframe>
+
+
+     
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <!-- <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  /> -->
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+     
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="/assets/img/avatars/1.jpg" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="/assets/img/avatars/1.jpg" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Sara Doe</span>
+                            <small class="text-muted">User</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="d-flex align-items-center align-middle">
+                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-basic.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <div class="col-lg-8 mb-4 order-0">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h3 class="card-title text-primary"> Welcome Back</h3>
+                          <h1 class="card-title text-primary"> Sara 🎉</h1>
+    
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div class="card-body pb-0 px-0 px-md-4">
+                          <img
+                            src="/assets/img/illustrations/hero.jpg"
+                            height="140"
+                            alt="View Badge User"
+                            data-app-dark-img="illustrations/hero.jpg"
+                            data-app-light-img="illustrations/hero.jpg"
+                          />
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 order-1">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img
+                                src="/assets/img/icons/unicons/chart-success.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                            </div>
+ 
+                          </div>
+                          <span class="fw-semibold d-block mb-1">Mood Tracker
+                          </span>
+                          
+                          
+</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img
+                                src="/assets/img/icons/unicons/wallet-info.png"
+                                alt="Credit Card"
+                                class="rounded"
+                              />
+                            </div>
+
+                          </div>
+                          <span>Thoughts Journal</span>
+                        
+   </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <div class="col-md-8">
+                        <h5 class="card-header m-0 me-2 pb-3">Your Holistic Health Journey Starts Here</h5>
+                        <p class="card-header m-0 me-2 pb-3">Embark on a Wellness Adventure: Uncover the Secrets to Optimal Mental, Emotional, and Physical Well-being</p>
+                        <div class="text-center fw-semibold pt-3 mb-2">Believe in yourself, and you can do amazing things!</div>
+
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <div class="text-center">
+                   
+                          
+                          </div>
+                        </div>
+                        <div id="growthChart"></div>
+                        
+
+                        <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
+                          <div class="d-flex">
+               
+                            <div class="d-flex flex-column">
+                             
+                              
+                            </div>
+                          </div>
+                          <div class="d-flex">
+       
+                            <div class="d-flex flex-column">
+                             
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                  <div class="row">
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              👣</div>
+
+                          </div>
+                          <span class="d-block mb-1">Steps Counter</span>
+         </div>
+                      </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              🥗 </div>
+
+                          </div>
+                          <span class="fw-semibold d-block mb-1">Nutritious Meal </span>
+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- mood -->
+                <div id="Mood" class="col-md-6 col-lg-6 col-xl-6 order-0 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                      <div class="card-title mb-0">
+                        <h5 class="m-0 me-2">Mood</h5>
+                        <small class="text-muted">Daily moods</small>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="orederStatistics"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
+                          <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="d-flex flex-column align-items-center gap-1">
+                          <h2 class="mb-2">4</h2>
+                          <span>Total Moods</span>
+                        </div>
+                        <div id="orderStatisticsChart"></div>
+                      </div>
+                      <ul class="p-0 m-0">
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-danger"
+                              >
+                            😡</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="mb-0"> Anger</h6>
+                              
+                            </div>
+                            <div class="user-progress">
+                              <small class="fw-semibold">85</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-success">🙏</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="mb-0"> Gratitude</h6>
+                              
+                            </div>
+                            <div class="user-progress">
+                              <small class="fw-semibold">50</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-info">😀</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="mb-0">Joy</h6>
+                             
+                            </div>
+                            <div class="user-progress">
+                              <small class="fw-semibold">50</small>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-secondary"
+                              >😓</span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="mb-0">Sadness</h6>
+                           
+                            </div>
+                            <div class="user-progress">
+                              <small class="fw-semibold">15</small>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--/ mood -->
+
+                <!-- Emotional status -->
+                <div id ="Emotionalstatus" class="col-md-6 col-lg-6 order-1 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header">
+                      <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                          <button
+                            type="button"
+                            class="nav-link active"
+                            role="tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#navs-tabs-line-card-income"
+                            aria-controls="navs-tabs-line-card-income"
+                            aria-selected="true"
+                          >
+                          Emotional status
+                          </button>
+                        </li>
+       
+                      </ul>
+                    </div>
+                    <div class="card-body px-0">
+                      <div class="tab-content p-0">
+                        <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
+                          <div class="d-flex p-4 pt-3">
+                            <div class="avatar flex-shrink-0 me-3">
+                              ✅
+                            </div>
+                            <div>
+                              <small class="text-muted d-block">Good</small>
+                              <div class="d-flex align-items-center">
+                                <h6 class="mb-0 me-1">50</h6>
+                                <small class="text-success fw-semibold">
+                                  <i class="bx bx-chevron-up"></i>
+                                  42.9%
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="incomeChart"></div>
+                          <div class="d-flex justify-content-center pt-4 gap-2">
+                            <div class="flex-shrink-0">
+                              <div id="expensesOfWeek"></div>
+                            </div>
+                            <div>
+                              <p class="mb-n1 mt-1">Bad Thoughts On This Week</p>
+                              <small class="text-muted">39% less than last week</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Emotional status -->
+
+                <!-- Thoughts -->
+                <div id="#Thoughts" class="col-md-16 col-lg-12 order-2 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2"> Thoughts</h5>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            😡
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Anger</small>
+                              <p class="mb-0">I felt really angry today when my friend took my favorite crayon without asking. It made me feel like she didn't care about my things. I wanted to shout, but I tried to calm down instead.</p>
+                            </div>
+
+                          </div>
+                        </li>
+
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            😀
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Joy</small>
+                              <p class="mb-0">I felt so joyful when my teacher gave me a gold star for my drawing! I worked really hard on it, and it made me feel proud. I couldn’t wait to show my family when I got home!</p>
+                            </div>
+
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            🙏
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Gratitude</small>
+                              <p class="mb-0">I'm so grateful that my mom packed my favorite sandwich for lunch today! It made me feel so loved and happy. I told her thank you when I got home because it made my day special.</p>
+                            </div>
+        
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            😓
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Sadness</small>
+                              <p class="mb-0">I felt sad when my best friend was out sick today. Recess wasn’t the same without her, and I missed our games. I hope she feels better soon so we can play together again.</p>
+                            </div>
+
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Thoughts -->
+                </div>
+
+
+
+
+              <div class="row">
+                <!-- Sports -->
+                <div id="Sport" class="col-md-6 col-lg-4 col-xl-4 order-2 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                      <div class="card-title mb-0">
+                        <h5 class="m-0 me-2">Sports</h5>
+                        
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="orederStatistics"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
+                          <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+       
+                        <div id="orderStatisticsChart"></div>
+                      </div>
+                      <ul class="p-0 m-0">
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <span class="avatar-initial rounded bg-label-danger"
+                              >🤸‍♂
+                            </span>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <h6 class="mb-0">Gymnastics</h6>
+                              
+                            </div>
+                            <div class="user-progress">
+                              <small class="fw-semibold">2p.m - 3p.m</small>
+                            </div>
+                          </div>
+                        </li>
+
+
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--/ mood -->
+
+                <!-- Emotional status -->
+                <div id="Step" class="col-md-6 col-lg-4 order-0 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2"> Steps</h5>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center gap-1">
+                      <h2 class="mb-2">400</h2>
+                      <span>Today</span>
+                    </div>
+                    <div class="card-body px-0">
+                      <div class="tab-content p-0">
+                        <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
+                          <div class="d-flex p-4 pt-3">
+                            <div class="avatar flex-shrink-0 me-3">
+                              ✅
+                            </div>
+                            <div>
+                              <small class="text-muted d-block">Good</small>
+                              <div class="d-flex align-items-center">
+                                <h6 class="mb-0 me-1">50</h6>
+                                <small class="text-success fw-semibold">
+                                  <i class="bx bx-chevron-up"></i>
+                                  22.9%
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="incomeChart"></div>
+ 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Emotional status -->
+
+                <!-- Thoughts -->
+                <div id="PhysicalActivity"class="col-md-6 col-lg-4 order-1 mb-4">
+                  <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="card-title m-0 me-2"> Physical Activities</h5>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="transactionID"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                          <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <ul class="p-0 m-0">
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            💃
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Dancing</small>
+                        </div>
+
+                          </div>
+                        </li>
+
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            🏃‍♀
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Running </small>
+                    </div>
+
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            🦘
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Jump Rope</small>
+                            </div>
+        
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            🚴
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="me-2">
+                              <small class="text-muted d-block mb-1">Cycling</small>
+                     </div>
+
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Thoughts -->
+                </div>
+
+
+<!-- food -->
+<div id ="food" class="container-xxl flex-grow-1 container-p-y">
+  <div class="row">
+    <div class="col-lg-8 mb-4 order-0">
+      <div class="card">
+        <div class="d-flex align-items-end row">
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h3 class="card-title text-primary"> Food and Diet</h3>
+              
+              <small class="text-muted d-block mb-1">Daily meal and diet log</small>
+              
+
+            </div>
+          </div>
+          <div class="col-sm-5 text-center text-sm-left">
+            <div class="card-body pb-0 px-0 px-md-4">
+              <img
+                src="/assets/img/illustrations/food.jpg"
+                height="140"
+                alt="View Badge User"
+                data-app-dark-img="illustrations/hero.jpg"
+                data-app-light-img="illustrations/hero.jpg"
+              />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 order-1">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-6 mb-4">
+          <div class="card1">
+            <div class="card-body">
+              <img
+              src="/assets/img/illustrations/food1.jpg"
+              height="140"
+              alt="View Badge User"
+              data-app-dark-img="illustrations/hero.jpg"
+              data-app-light-img="illustrations/hero.jpg"
+            />
+         
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-6 mb-4">
+          <div class="card1">
+            <div class="card-body">
+              <img
+              src="/assets/img/illustrations/food2.jpg"
+              height="140"
+              alt="View Badge User"
+              data-app-dark-img="illustrations/hero.jpg"
+              data-app-light-img="illustrations/hero.jpg"
+            />
+            
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+      <div class="card">
+        <div class="row row-bordered g-0">
+          <div class="col-md-12">
+            <div class="card-header d-flex align-items-center justify-content-between">
+            <h5 class="card-title m-0 me-2"> Meal Plan for the Day</h5>
+            <div class="dropdown">
+              <button
+                class="btn p-0"
+                type="button"
+                id="transactionID"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                <a class="dropdown-item" href="javascript:void(0);">Add</a>
+                <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+              </div>
+            </div>
+          </div>
+            
+            
+            <p class="card-header m-0 me-2 pb-3">
+                <!-- Breakfast -->
+                <strong>Breakfast:</strong> Scrambled eggs with whole-grain toast, a small handful of berries, and a glass of milk. <br>
+                <em>Time:</em> 7:30 AM<br>
+                <em>Notes:</em> Provides protein for energy and focus, whole grains for sustained energy, and fresh fruit for vitamins.
+                <br><br>
+        
+                <!-- Mid-Morning Snack -->
+                <strong>Mid-Morning Snack:</strong> Sliced apple with a tablespoon of peanut butter.<br>
+                <em>Time:</em> 10:00 AM<br>
+                <em>Notes:</em> Combines fruit with a small amount of healthy fat for energy until lunchtime.
+                <br><br>
+        
+                <!-- Lunch -->
+                <strong>Lunch:</strong> Turkey and cheese sandwich on whole-grain bread, carrot sticks, and a yogurt cup.<br>
+                <em>Time:</em> 12:30 PM<br>
+                <em>Notes:</em> Offers a balance of protein, whole grains, and dairy for a nutritious meal.
+                <br><br>
+        
+                <!-- Afternoon Snack -->
+                <strong>Afternoon Snack:</strong> Small handful of trail mix (almonds, raisins, and a few dark chocolate chips) or a banana.<br>
+                <em>Time:</em> 3:30 PM<br>
+                <em>Notes:</em> Provides a mix of carbohydrates and healthy fats to sustain energy after school.
+                <br><br>
+        
+                <!-- Dinner -->
+                <strong>Dinner:</strong> Grilled chicken breast, brown rice, steamed broccoli, and a glass of water.<br>
+                <em>Time:</em> 6:30 PM<br>
+                <em>Notes:</em> Balanced meal with lean protein, fiber, and vegetables for a filling and nutritious end to the day.
+                <br><br>
+        
+                <!-- Evening Snack (Optional) -->
+                <strong>Evening Snack:</strong> A small bowl of low-fat popcorn or a piece of fruit.<br>
+                <em>Time:</em> 8:00 PM<br>
+                <em>Notes:</em> A light snack if still hungry, offering a low-calorie option.
+            </p>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+      <div class="row">
+        <div class="col-6 mb-4">
+          <div class="card1">
+            <div class="card-body">
+              <img
+              src="/assets/img/illustrations/food3.jpg"
+              height="140"
+              alt="View Badge User"
+              data-app-dark-img="illustrations/hero.jpg"
+              data-app-light-img="illustrations/hero.jpg"
+            />
+</div>
+          </div>
+        </div>
+        <div class="col-6 mb-4">
+          <div class="card1">
+            <div class="card-body">
+              <img
+              src="/assets/img/illustrations/food4.jpg"
+              height="140"
+              alt="View Badge User"
+              data-app-dark-img="illustrations/hero.jpg"
+              data-app-light-img="illustrations/hero.jpg"
+            />
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<h6 id="about" style="color: #e05ca0;">About us</h6>
+<p>Loxodonta, your user-friendly health and wellness tracking companion. We’re dedicated to making personal wellness simple, accessible, and insightful. Our platform is designed to help you effortlessly monitor your health goals, track progress, and stay motivated on your journey toward a healthier, happier you. At Loxodonta, we believe that wellness should be easy to manage, with tools that fit seamlessly into your lifestyle. Join us in building a better, balanced future—one step at a time!</p>
+
+
+
+
+
+              </div>
+            </div>
+            <!-- / Content -->
+
+
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+
+                            <!-- Card Groups -->
+                          
+                            <div class="card-group">
+                              <div class="card">
+                                <div class="card-body" style="color: #9c73f7;">
+                                  <i class='bx bx-home'></i>
+                                  <p class="icon-name text-capitalize text-truncate mb-0">Home</p>   
+                                  </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body" style="color: #9c73f7;">
+                                  <i class='bx bxs-book-heart'></i>
+                                  <p class="icon-name text-capitalize text-truncate mb-0">Self-Care</p>   
+                                  </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body" style="color: #9c73f7;">
+                                  <i class='bx bx-alarm' ></i>
+                                  <p class="icon-name text-capitalize text-truncate mb-0">Reminders</p>   
+                                  </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body" style="color: #9c73f7;">
+                                  <i class='bx bx-book' ></i>
+                                  <p class="icon-name text-capitalize text-truncate mb-0">More Info</p>   
+                                  </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body" style="color: #9c73f7;">
+                                  <i class='bx bx-help-circle' ></i>
+                                  <p class="icon-name text-capitalize text-truncate mb-0">Help</p>   
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+              
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Loxodonta
+                  <a href="www.uvibirds.com" target="_blank" class="footer-link fw-bolder">| Web by Uvibirds</a>
+                </div>
+                <div>
+              
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >luxodonta.support@gmail.com</a
+                  >
+
+
+                  <a
+                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                    target="_blank"
+                    class="footer-link me-4"
+                    >+61 703152540</a
+                  >
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/assets/vendor/js/bootstrap.js"></script>
+    <script src="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="/assets/js/dashboards-analytics.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
